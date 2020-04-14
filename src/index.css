@@ -53,6 +53,12 @@ ol, ul {
   outline: none;
 }
 
+.square.active:hover {
+  outline: none;
+  background-color: #4CAF50;
+}
+
+
 .kbd-navigation .square:focus {
   background: #fff;
 }
