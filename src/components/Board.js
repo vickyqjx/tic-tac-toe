@@ -23,6 +23,13 @@ class Board extends React.Component {
     });
   }
 
+  resetGame() {
+    this.setState({
+      squares: Array(9).fill(null),
+      xIsNext: true,
+    });
+  }
+
   renderSquare(i, highlights) {
     return (
       <Square
@@ -52,18 +59,29 @@ class Board extends React.Component {
   render() {
     const winner = calculateWinner(this.state.squares);
     let status;
-    let highlights = []
+    let highlights = [];
+    let message = '';
+    const gameOverMessage = <span className="highlighted">Game Over!&nbsp;</span>;
     if (winner) {
-      status = 'Winner: ' + winner.name;
+      status = `Winner:${winner.name}`;
       highlights = winner.highlights;
+      message = gameOverMessage;
+    } else if (!this.state.squares.includes(null)) {
+      message = gameOverMessage;
+      status = 'No winner';
     } else {
-      status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+      status = 'Current Player: ' + (this.state.xIsNext ? 'X' : 'O');
     }
 
     return (
       <div>
         {this.renderBoard(3, 3, highlights)}
-        <div className="status">{status}</div>
+        <div className="status">{message}{status}</div>
+        <div className="buttons">
+          {message !== '' ?
+            <button className="reset-button" onClick={() => this.resetGame()}>Play again</button> : null
+          }      
+        </div>
       </div>
     );
   }
