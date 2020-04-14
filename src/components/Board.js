@@ -23,27 +23,28 @@ class Board extends React.Component {
     });
   }
 
-  renderSquare(i) {
+  renderSquare(i, highlights) {
     return (
       <Square
         value={this.state.squares[i]}
         onClick={() => this.handleClick(i)}
+        ishighlighted={highlights.includes(i)}
       />
     );
   }
 
-  renderRow(currentRow, columns) {
+  renderRow(currentRow, columns, highlights) {
     let row = [];
     for (var j = 0; j < columns; j++) {
-      row.push(this.renderSquare(currentRow * columns + j));
+      row.push(this.renderSquare(currentRow * columns + j, highlights));
     }
     return <div className="board-row">{row}</div>;
   }
 
-  renderBoard(rows, columns) {
+  renderBoard(rows, columns, highlights) {
     let table = [];
     for (var i = 0; i < rows; i++) {
-      table.push(this.renderRow(i, columns));
+      table.push(this.renderRow(i, columns, highlights));
     }
     return table;
   }
@@ -51,15 +52,17 @@ class Board extends React.Component {
   render() {
     const winner = calculateWinner(this.state.squares);
     let status;
+    let highlights = []
     if (winner) {
-      status = 'Winner: ' + winner;
+      status = 'Winner: ' + winner.name;
+      highlights = winner.highlights;
     } else {
       status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
     }
 
     return (
       <div>
-        {this.renderBoard(3, 3)}
+        {this.renderBoard(3, 3, highlights)}
         <div className="status">{status}</div>
       </div>
     );

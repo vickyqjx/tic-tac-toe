@@ -37,15 +37,15 @@ ol, ul {
   background: #24272e;
   border: 1px solid #fff;
   float: left;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
-  line-height: 34px;
-  height: 34px;
+  line-height: 50px;
+  height: 50px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 50px;
   color: #fff;
 }
 
@@ -64,8 +64,9 @@ ol, ul {
 }
 
 .game-title {
-  font-size: 32px;
+  font-size: 36px;
   padding-bottom: 15px;
+  font-weight: bold;
 }
 
 .game-board, .game-title {
@@ -75,4 +76,8 @@ ol, ul {
 
 .game-info {
   margin-left: 20px;
+}
+
+.highlighted {
+  color: red;
 }
