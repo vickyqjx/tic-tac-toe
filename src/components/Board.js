@@ -59,8 +59,8 @@ class Board extends React.Component {
 
     return (
       <div>
-        <div className="status">{status}</div>
         {this.renderBoard(3, 3)}
+        <div className="status">{status}</div>
       </div>
     );
   }

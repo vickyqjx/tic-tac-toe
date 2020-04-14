@@ -1,10 +1,12 @@
 import React from 'react';
-import './App.css';
 import Board from './components/Board.js';
 
 function App() {
   return (
     <div className="game">
+      <div className="game-title">
+        Tic Tac Toe
+      </div>
       <div className="game-board">
         <Board />
       </div>
