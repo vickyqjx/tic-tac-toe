@@ -23,9 +23,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: yarn install
-    - run: yarn predeploy
     - name: Run tests
       run: yarn test
+    - name: Run build
+      run: yarn predeploy
     - name: Publish github pages
       run: |
         git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/vickyqjx/tic-tac-toe.git
