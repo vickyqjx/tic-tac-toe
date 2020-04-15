@@ -1,7 +1,7 @@
 # Tic Tac Toe
 
 [Demo](https://vickyqjx.github.io/tic-tac-toe/)<br/>
-![enter image description here](https://github.com/vickyqjx/tic-tac-toe/blob/master/public/images/tic-tac-toe-demo.gif)
+![enter image description here](https://github.com/vickyqjx/tic-tac-toe/blob/master/tic-tac-toe-demo.gif)
 
 ## Prerequisite
 
