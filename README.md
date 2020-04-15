@@ -1,11 +1,14 @@
-Tic Tac Toe Practice
+# Tic Tac Toe
 
 [Demo](https://vickyqjx.github.io/tic-tac-toe/)
+![enter image description here](https://github.com/vickyqjx/tic-tac-toe/blob/master/public/images/tic-tac-toe-demo.gif)
 
 ## Prerequisite
 
--   node ^13.10.1
--   npm ^6.14.4 or yarn ^1.22.4
+```
+- node 12.* or 13.*
+- npm 6.14.* or yarn 1.22.*
+```
 
 To install npm, please follow this the instruction on the page [https://www.npmjs.com/get-npm](https://www.npmjs.com/get-npm)
 <br/>
