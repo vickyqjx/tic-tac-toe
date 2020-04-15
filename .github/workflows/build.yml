@@ -23,7 +23,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: yarn install
-    - run: yarn build
-    - run: git config user.email "$GITHUB_ACTOR@gmail.com"
-    - run: git config user.name "$GITHUB_ACTOR"
+    - run: yarn predeploy
+    - run: git config user.email "vickyqjx@gmail.com"
+    - run: git config user.name "vickyqjx"
     - run: yarn deploy
