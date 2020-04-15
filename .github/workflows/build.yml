@@ -24,7 +24,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: yarn install
     - run: yarn build
-    - run: git switch -c master
     - run: git config user.email "$GITHUB_ACTOR@gmail.com"
     - run: git config user.name "$GITHUB_ACTOR"
     - run: yarn deploy
