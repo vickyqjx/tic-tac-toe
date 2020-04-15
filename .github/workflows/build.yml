@@ -24,6 +24,9 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: yarn install
     - run: yarn predeploy
-    - run: git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
-    - run: git config user.name "$GITHUB_ACTOR"
-    - run: yarn deploy
+    - name: Publish github pages
+      run: |
+        git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/vickyqjx/tic-tac-toe.git
+        yarn deploy
+      env:
+        GITHUB_TOKEN: ${{ secrets.RELEASE_GITHUB_TOKEN }}
