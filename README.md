@@ -6,7 +6,7 @@
 ## Prerequisite
 
 ```
-- node 12.* or 13.*
+- node 10.* or 12.* or 13.*
 - npm 6.14.* or yarn 1.22.*
 ```
 
