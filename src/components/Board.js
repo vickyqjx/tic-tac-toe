@@ -78,9 +78,9 @@ class Board extends React.Component {
         {this.renderBoard(3, 3, highlights)}
         <div className="status">{message}{status}</div>
         <div className="buttons">
-          {message !== '' ?
-            <button className="reset-button" onClick={() => this.resetGame()}>Play again</button> : null
-          }      
+          <button className="reset-button" onClick={() => this.resetGame()}>
+            { message !== '' ? 'Play again' : 'Restart' }
+          </button>
         </div>
       </div>
     );
