@@ -1,6 +1,9 @@
 
 # Tic Tac Toe
 
+
+![](https://github.com/vickyqjx/tic-tac-toe/workflows/CI/badge.svg)
+
 [Demo](https://vickyqjx.github.io/tic-tac-toe/)<br/></br>
 ![enter image description here](https://github.com/vickyqjx/tic-tac-toe/blob/master/public/images/tic-tac-toe-demo.gif)
 
@@ -42,5 +45,5 @@ or
  `yarn test`
 
 
-### Build, test, and deploy via Github Actions:
+### Build, test, and deploy via Github Action
 ![enter image description here](https://github.com/vickyqjx/tic-tac-toe/blob/master/public/images/tic-tac-toe-CI.png)
