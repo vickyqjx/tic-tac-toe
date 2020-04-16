@@ -1,7 +1,8 @@
+
 # Tic Tac Toe
 
-[Demo](https://vickyqjx.github.io/tic-tac-toe/)<br/>
-![enter image description here](https://github.com/vickyqjx/tic-tac-toe/blob/master/tic-tac-toe-demo.gif)
+[Demo](https://vickyqjx.github.io/tic-tac-toe/)<br/></br>
+![enter image description here](https://github.com/vickyqjx/tic-tac-toe/blob/master/public/images/tic-tac-toe-demo.gif)
 
 ## Prerequisite
 
@@ -34,3 +35,12 @@ or
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 <br/>
+
+### Run the tests:
+`npm test`
+or
+ `yarn test`
+
+
+### Build, test, and deploy via Github Action
+![enter image description here](https://github.com/vickyqjx/tic-tac-toe/blob/master/public/images/tic-tac-toe-CI.png)
