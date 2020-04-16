@@ -42,5 +42,5 @@ or
  `yarn test`
 
 
-### Build, test, and deploy via Github Action
+### Build, test, and deploy via Github Actions:
 ![enter image description here](https://github.com/vickyqjx/tic-tac-toe/blob/master/public/images/tic-tac-toe-CI.png)
